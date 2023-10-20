@@ -1,0 +1,16 @@
+nav ul li {
+    list-style: none;
+    text-decoration: none;
+}
+
+a{
+    text-decoration: none;
+}
+
+nav > ul > li{
+    display :inline;
+}
+
+nav ul li +li{
+    margin-left:  10px;
+}

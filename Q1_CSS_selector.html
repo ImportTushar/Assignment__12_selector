@@ -1,0 +1,194 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Test</title>
+    <style>
+        body{
+            margin: 0;
+            background-color: black;
+            color: white;
+        }
+
+
+        nav{
+            display: grid;
+        }
+
+        h2{
+            text-align: center;
+            background-color: #090909;             /* Background color for the block */
+            color: #fff;      
+                                 /* Text color */
+            padding: 10px 20px;                 /* Add padding to the block */
+            display: inline-block;             /* Make the block inline with text */
+            margin: 0;     
+            border: 1px ; 
+                              /* Remove default margin */
+        }
+
+        ul{
+            background-color: rgb(255, 253, 253);
+            color: rgb(0, 0, 0);
+            display: flex;
+            list-style: none;
+            padding: 0;
+        }
+
+        li{
+            margin: 0;
+            width: 100%;
+        }
+
+        a{
+            border: 1px solid rgb(1, 217, 250);
+            display: grid;
+            justify-content: center;
+            text-decoration:none;
+            height: 25px;
+            background-color: rgb(250, 255, 255);
+            font-size:20px ;
+            font-weight: bold;
+            
+        }
+
+        a:hover{
+            color: rgb(255, 0, 225);
+            box-shadow: 
+            0 0 10px #fff,
+                    0 0 21px #fff,
+                    0 0 42px rgb(255, 0, 251),
+                    0 0 82px  rgb(255, 0, 251),
+                    0 0 92px rgb(255, 0, 251),
+                    0 0 102px rgb(255, 0, 251),
+                    0 0 151px rgb(255, 0, 251);;
+        }
+
+        .li:nth-child(1):nth-child(1){
+            color: blue;
+        }
+
+        .li:nth-child(2){
+            color: pink;
+        }
+
+        h2:first-child:nth-child(1){
+            box-shadow:       0 0 7px #fff,
+            0 0 10px #fff,
+            0 0 21px #fff,
+            0 0 42px #0fa,
+            0 0 82px #0fa,
+            0 0 92px #0fa,
+            0 0 102px #0fa,
+            0 0 151px #0fa;
+        }
+
+        a:active{
+            background-color: 0px 0px 10px white
+            3px 3px 10px rgb(255, 247, 1);
+        }
+
+        a[target="_self"] {
+        background-color: red; /* Change this to the desired background color */
+        }
+
+        p{
+            color: #fff;
+            text-shadow:
+            0 0 7px #fff,
+            0 0 10px #fff,
+            0 0 21px #fff,
+            0 0 42px #0fa,
+            0 0 82px #0fa,
+            0 0 92px #0fa,
+            0 0 102px #0fa,
+            0 0 151px #0fa;
+
+
+            
+        }
+
+        p:hover{
+            text-shadow:
+            0 0 7px #fff,
+            0 0 10px #fff,
+            0 0 21px #fff,
+            0 0 42px rgb(255, 0, 0),
+            0 0 82px rgb(255, 0, 0),
+            0 0 92px rgb(255, 0, 0),
+            0 0 102px rgb(255, 0, 0),
+            0 0 151px rgb(255, 0, 0);
+
+            animation: flicker 0.5s infinite alternate;
+            color: #ff0505 ;
+        }
+
+        /* Flickering animation */
+@keyframes flicker {
+    
+    0%, 18%, 22%, 25%, 53%, 57%, 100% {
+  
+        text-shadow:
+        0 0 4px #fff,
+        0 0 11px #fff,
+        0 0 19px #fff,
+        0 0 40px #0fa,
+        0 0 80px #0fa,
+        0 0 90px #0fa,
+        0 0 100px #0fa,
+        0 0 150px #0fa;
+    
+    }
+    
+    20%, 24%, 55% {        
+        text-shadow: none;
+    }    
+  }
+
+     p:last-child::after {
+    content: "..."; 
+    }
+
+    ul {
+    list-style: none; 
+    }
+
+    ul li::before {
+        content: "•"; 
+        color: red; 
+        margin-right: 8px;
+        display: inline-block; 
+    }
+
+    p:nth-child(2)::first-letter{
+        color: red;
+        font-size: 30px;
+    }
+
+
+        
+
+    </style>
+</head>
+<body>
+    <header>
+        <nav>
+            <h2>TOI</h2>
+        <div>
+            <h2>Menu</h2>
+            <ul>
+                <li><a href="#" target="_blank">Home</a></li>
+                <li><a href="#" class="active" target="_self">About</a></li>
+                <li><a href="#" target="_blank">Services</a></li> <li><a href="#" target="_blank">Contact</a></li>
+            </ul>
+        </div>
+            <p>The times of India</p>
+                <p>
+                    Lorem ipsum dolor sit amet consectetur adipisicing elit. Consequatur, maxime a. Deserunt distinctio doloremque repudiandae excepturi fugit repellat nostrum culpa!
+                </p>
+            <p>read articles</p>
+        </nav>
+    </header>
+</body>
+</html>
